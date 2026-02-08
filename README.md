@@ -1,4 +1,4 @@
-# ConcurrencyServer (Beginner-Friendly)
+# ConcurrencyServer
 
 This project is a small Windows TCP echo server written in C++. It accepts many client connections and uses a simple thread pool to handle them concurrently.
 
@@ -8,20 +8,7 @@ This project is a small Windows TCP echo server written in C++. It accepts many 
 - Accepts client connections.
 - For each client, reads data and sends the same data back (echo).
 
-## Build (Visual Studio)
-
-1. Open `ConcurrencyServer.sln` in Visual Studio.
-2. Select `x64` and `Debug` (or `Release`).
-3. Build the solution.
-
-## Run
-
-- Run from Visual Studio (Debug -> Start Without Debugging), or
-- Run the built EXE from the output folder.
-
-When the server starts, it prints logs to the console. Press Enter to stop.
-
-## Test with a simple client (PowerShell)
+## Test with a simple client
 
 This creates a TCP client, sends a line, and prints what the server echoes:
 
@@ -44,7 +31,7 @@ You should see the same text printed by the last line.
 - `TcpServer.h/.cpp` - TCP server implementation (WinSock setup, accept loop, client handling).
 - `ThreadPool.h/.cpp` - Simple thread pool used to run client handlers.
 
-## Key concepts (short explanations)
+## Key concepts
 
 - **WinSock**: The Windows socket API. You must call `WSAStartup` before using sockets and `WSACleanup` when done.
 - **Listening socket**: A socket used only to accept new clients.
@@ -60,7 +47,7 @@ Open `ConcurrencyServer.cpp` and change the port number in the `TcpServer` const
 TcpServer server("", 8080, threads);
 ```
 
-## How it works (high level)
+## How it works
 
 1. `main` creates a `TcpServer` and calls `Start()`.
 2. `Start()` initializes WinSock, creates/binds/listens on a socket.
