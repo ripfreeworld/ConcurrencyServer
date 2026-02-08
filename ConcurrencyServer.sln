@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConcurrencyServer", "ConcurrencyServer\ConcurrencyServer.vcxproj", "{E1BEFB61-FEA0-4E02-B70E-50F06A23F8FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1BEFB61-FEA0-4E02-B70E-50F06A23F8FB}.Debug|x64.ActiveCfg = Debug|x64
+		{E1BEFB61-FEA0-4E02-B70E-50F06A23F8FB}.Debug|x64.Build.0 = Debug|x64
+		{E1BEFB61-FEA0-4E02-B70E-50F06A23F8FB}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1BEFB61-FEA0-4E02-B70E-50F06A23F8FB}.Debug|x86.Build.0 = Debug|Win32
+		{E1BEFB61-FEA0-4E02-B70E-50F06A23F8FB}.Release|x64.ActiveCfg = Release|x64
+		{E1BEFB61-FEA0-4E02-B70E-50F06A23F8FB}.Release|x64.Build.0 = Release|x64
+		{E1BEFB61-FEA0-4E02-B70E-50F06A23F8FB}.Release|x86.ActiveCfg = Release|Win32
+		{E1BEFB61-FEA0-4E02-B70E-50F06A23F8FB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32D9EAC1-B4C1-4B52-B900-74EFD6F9075C}
+	EndGlobalSection
+EndGlobal
